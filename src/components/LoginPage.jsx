@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Row, Col, Form, InputGroup, Card, Button } from 'react-bootstrap'
-import {app} from '../firebaseInit'
-import {getAuth, signInWithEmailAndPassword} from 'firebase/auth'
+import { app } from '../firebaseInit'
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import { Link } from 'react-router-dom'
 
-const LoginPage = ({history}) => {
+const LoginPage = ({ history }) => {
     const [loading, setLoding] = useState(false);
     const auth = getAuth(app);
     const [form, setForm] = useState({
